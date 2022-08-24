@@ -25,15 +25,15 @@ console.log('product', product);
 
 const initialValue = 0;
 const balance = account.reduce((total, transaction, initialValue) => {
-  console.log('111', total);
-  console.log('222', transaction);
+  // console.log('111', total);
+  // console.log('222', transaction);
   if (transaction.type === 'deposit') {
     return total + transaction.amount;
   } else {
     return total - transaction.amount;
   }
 }, initialValue);
-console.log(balance);
+console.log('balance', balance);
 
 const composite = traits.reduce((target, source) => Object.assign(target, source));
 console.log('composite', composite);
