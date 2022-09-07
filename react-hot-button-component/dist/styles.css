@@ -1,0 +1,28 @@
+button {
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+.one {
+  background-color: purple;
+}
+
+.two {
+  background-color: blueviolet;
+}
+
+.three {
+  background-color: orangered;
+}
+
+.four {
+  background-color: orange;
+}
+
+.five {
+  background-color: yellow;
+}
+
+.six {
+  background-color: white;
+}
