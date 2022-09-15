@@ -1,0 +1,18 @@
+.name {
+  background-color: rgb(219 219 219);
+  border: 3px solid;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.container {
+  width: 50%;
+}
+
+.details {
+  border: 3px solid;
+}
+
+.off {
+  display: none;
+}
