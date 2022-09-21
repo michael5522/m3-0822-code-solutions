@@ -26,7 +26,7 @@ class Carousel extends React.Component {
   handleClickLeft(event) {
     if (this.state.photo === 0) {
       this.setState({
-        photo: 4
+        photo: this.props.poke.length - 1
       });
     } else {
       this.setState({
@@ -40,7 +40,7 @@ class Carousel extends React.Component {
   }
 
   handleClickRight(event) {
-    if (this.state.photo === 4) {
+    if (this.state.photo === this.props.poke.length - 1) {
       this.setState({
         photo: 0
       });
