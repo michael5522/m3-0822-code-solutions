@@ -121,9 +121,9 @@ export default class App extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col pt-5">
-            <PageTitle texto="Todo App"/>
-            <TodoForm onSubmit={this.addTodo}/>
-            <TodoList todos={this.state.todos} toggleCompleted={this.toggleCompleted}/>
+            <PageTitle texto="Todo App" />
+            <TodoForm onSubmit={this.addTodo} />
+            <TodoList todos={this.state.todos} toggleCompleted={this.toggleCompleted} />
           </div>
         </div>
       </div>
