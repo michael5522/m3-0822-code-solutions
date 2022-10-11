@@ -1,0 +1,27 @@
+describe the flow of the code in writing, including the client, server, and database. How does the code work?
+
+User can sign up.
+1. User starts in app.jsx, and user clicks register
+2. Gets sent to <Auth />
+3. Gets a Create an account to get started
+4. path changes to #sign-up
+5. Goes to <Authform> to do server magic to add to database
+
+User can sign in.
+1. User starts in app.jsx, and user clicks sign in
+2. Gets sent to <Auth />
+3. User types in account info to get started
+4. path changes to #sign-in
+5. Goes to <Authform> to sign in and fetches
+6. if successful, render gifs
+
+User can stay signed in (even if they refresh the page).
+1. User stays signed in even when refreshed because the hash location was not changed.
+
+
+User can sign out.
+When user clicks the log out button onclick has "handleSignOut",
+this is no longer true, so sent back to sign-in.
+if (!this.context.user) return <Redirect to="sign-in" />;
+window.localStorage.removeItem('react-context-jwt');
+    this.setState({ user: null });
