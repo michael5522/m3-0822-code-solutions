@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Focused JavaScript | Module 2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Bootstrap & core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+    .mt-1 {
+      margin-top: 1px;
+    }
+
+    .mb-1 {
+      margin-bottom: 1px;
+    }
+
+    .mt-5 {
+      margin-top: 5px;
+    }
+
+    img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .btn-group-xs>.btn,
+    .btn-xs {
+      padding: .25rem .4rem;
+      font-size: .875rem;
+      line-height: .5;
+      border-radius: .2rem;
+    }
+
+    .song-area>.row {
+      border-bottom: 1px white solid;
+      height: 30px;
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    .artist {
+      color: rgba(255, 255, 255, .7);
+    }
+
+    .song {
+      color: #fff;
+    }
+
+    .plays {
+      color: #fff;
+    }
+
+    .song-area>.row:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .playlist-area {
+      padding: 15px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border-radius: 25px;
+    }
+
+    .bg-gradient {
+      background: linear-gradient(135deg, rgb(150, 105, 95) 0%, rgb(65, 47, 50) 100%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="my-4 text-center text-lg-left">Meeting In The Desert</h1>
+    <h6>A playlist of desert music to reconnect with the self.</h6>
+
+    <div class="container mt-5 bg-gradient playlist-area">
+      <div class="row">
+        <div class="col-2">
+          <img class="img-fluid" src="https://i1.sndcdn.com/artworks-000383765928-zla0i9-t500x500.jpg">
+        </div>
+        <div class="col-10">
+          <div class="container song-area" style="max-height: 130px; overflow-y: auto;">
+
+            <!-- <div class="row">
+                <div class="col-11">
+                  <span class="artist">Kunala Records - </span><span class="song">Sigil - Strictly Transpersonal</span>
+                </div>
+                <div class="col-1">
+                    <span class="plays">7543</span>
+                </div>
+                             </div> -->
+            <!--
+              <div class="row">
+                <div class="col-11">
+                  <span class="artist">Kunala Records - </span><span class="song">Sigil - Strictly Transpersonal</span>
+                </div>
+                <div class="col-1">
+                  <span class="plays">7543</span>
+                </div>
+              </div>  -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
