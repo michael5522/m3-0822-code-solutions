@@ -1,0 +1,16 @@
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.btn {
+  font-size: 3rem;
+  padding: 2rem;
+}
