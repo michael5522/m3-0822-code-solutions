@@ -5,12 +5,11 @@ class RegistrationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      valueUN: '',
-      valuePW: ''
+      name: '',
+      password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleUsernameChange = this.handleUsernameChange.bind(this);
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleSubmit(e) {
@@ -18,32 +17,28 @@ class RegistrationForm extends React.Component {
     e.preventDefault();
   }
 
-  handleUsernameChange(e) {
-    // console.log('user name', e.target.value);
+  handleChange(e) {
+    const { name, value } = e.target;
+    // console.log('this is the handlechange---', name, value);
     this.setState({
-      valueUN: e.target.value
+      [name]: value
     });
-  }
 
-  handlePasswordChange(e) {
-    // console.log('password', e.target.value);
-    this.setState({
-      valuePW: e.target.value
-    });
   }
 
   render() {
+    const { name, password } = this.state;
     // console.log(this.state);
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <label htmlFor="name">
           Username:
-          <input type="text" value={this.state.valueUN} onChange={this.handleUsernameChange} />
+          <input type="text" value={name} name="name" onChange={this.handleChange} />
         </label>
 
-        <label>
+        <label htmlFor="password">
           Password:
-          <input type="password" value={this.state.valuePW} onChange={this.handlePasswordChange} />
+          <input type="password" value={password} name="password" onChange={this.handleChange} />
         </label>
         <button>Sign Up</button>
       </form>
@@ -58,3 +53,49 @@ const elements = (
 const container = document.querySelector('#root');
 const root = ReactDOM.createRoot(container);
 root.render(elements);
+
+// class Regi extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       name: '',
+//       password: ''
+//     };
+//     this.handleChange = this.handleChange.bind(this);
+//     this.submitter = this.submitter.bind(this);
+//   }
+
+//   handleChange(e) {
+//     const { name, value } = e.target;
+//     // console.log(name, value);
+//     this.setState({
+//       [name]: value
+//     });
+//   }
+
+//   submitter(e) {
+//     e.preventDefault();
+//     console.log(this.state);
+//   }
+
+//   render() {
+//     const { name, password } = this.state;
+//     return (
+//       <form onSubmit={this.submitter}>
+//         <label htmlFor="name">
+//           Name:
+//           <input type="text" name="name" value={name} onChange={this.handleChange}/>
+//         </label>
+//         <label htmlFor="password">
+//           Password:
+//           <input type="password" name="password" value={password} onChange={this.handleChange}/>
+//         </label>
+//         <button>Sign up</button>
+//       </form>
+//     );
+//   }
+// }
+
+// const container = document.querySelector('#root');
+// const root = ReactDOM.createRoot(container);
+// root.render(<Regi/>);
