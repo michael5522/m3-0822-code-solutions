@@ -1,0 +1,23 @@
+h1 {
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 20px;
+}
+
+.ola {
+  outline-style: solid;
+  width: 500px;
+}
+
+.ola2 {
+  background-color: lightgray;
+  outline-style: solid;
+}
+
+.hidden {
+  display: none;
+}
