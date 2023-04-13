@@ -1,0 +1,33 @@
+h1 {
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+
+.left,
+.right {
+  font-size: 3rem;
+}
+
+.buttons {
+  border-radius: 50%;
+  font-size: 25px;
+  background-color: white;
+  color: red;
+}
+
+.on {
+  background-color: black;
+}
